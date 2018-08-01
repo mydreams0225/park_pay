@@ -1,4 +1,8 @@
 $(function(){
+
+  
+       
+
     //输入span的touch事件
     $('.input-wrap').on('touchstart','.input-span',function(e){
         $('.input-span').removeClass('input-span-active');
@@ -156,3 +160,22 @@ function changeBeforeTarget(){
     }
 
 }
+
+
+function getUrl(url,name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r  = !url.split("?")[1]  ? "" : url.split("?")[1].match(reg);
+    if (!!r)
+        return decodeURI(r[2]);
+    return null;
+}
+    var url = window.location.href;
+    var parkNo = getUrl(url,"parkNo");
+    if(parkNo){
+    var inputList =  $('.input-span')
+    var len=parkNo.length;
+    for(var i=0;i<len;i++){
+            console.log(inputList[i])
+            $(inputList[i]).html(parkNo[i]);
+    }
+    }

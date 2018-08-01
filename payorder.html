@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="GBK" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <!-- øÿ÷∆‰Ø¿¿∆˜ª∫¥Ê -->
-        <!-- <meta http-equiv="Cache-Control" content="no-store" /> -->
-        <!-- ”≈œ» π”√ IE ◊Ó–¬∞Ê±æ∫Õ Chrome -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <!-- “≥√Ê√Ë ˆ -->
-        <meta name="description" content="≤ª≥¨π˝150∏ˆ◊÷∑˚" />
-        <!-- “≥√Êπÿº¸¥  -->
+        <meta name="description" content="" />
         <meta name="keywords" content="" />
         
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
 		
-        <title>≤‚ ‘</title>
+        <title>ÂæÆ‰ø°ÂÅúËΩ¶Âú∫ÊîØ‰ªò</title>
+        <link rel="stylesheet" href="Content/css/parkPays.css">
         <link type="text/css" rel="stylesheet" href="Content/css/pay.css"/>
-        <style>
-            
-        </style>
 
         <script type="text/javascript" src="Content/js/jquery-3.2.1.min.js"></script>
       	<!-- <script type="text/javascript" src="Content/js/check_help.js"></script> -->
@@ -28,55 +21,136 @@
         <script type="text/javascript" src="Content/js/util_help.min.js"></script>
     </head>
     <body>
-        <div class="wrap">
-            <div class="sub_title">
-                <p>«Æœ∞Œƒ≤‚ ‘“≥√Ê-±æµÿ“≥√Ê</p>
+        <div class="title-wrap">
+            <div> <span>ÂπøÂ∑ûËê•ÁîüÂπøÂú∫</span></div>
+           
+        </div>
+        <div class="pay-wrap">
+           <div class="input-wrap">
+                <span class="input-span  input-span-first"></span>
+                <span class="input-span"></span>
+                <span class="input-span-special">‚óè</span>
+                <span class="input-span"></span>
+                <span class="input-span"></span>
+                <span class="input-span"></span>
+                <span class="input-span"></span>
+                <span class="input-span"></span>
+                <span class="input-span last-span" >Êñ∞ËÉΩÊ∫ê</span>
             </div>
-            <form action="" class="edit_cash">
-                <p>œ˚∑—◊‹∂Ó</p>
-                <div class="shuru">
-                    <span>&yen;</span>
-                    <div id="total"></div>
-                </div>
-                <p>ø…—ØŒ π§◊˜»À‘±”¶Ω…∑—”√◊‹∂Ó</p>
-            </form>
-            <input type="submit" value="÷ß∏∂" class="submit" />
-            <br/>
-            <div class="logo">
-                <img src="Content/image/logo_200_85.png" alt="∑‰∏∂Logo">
+            <div class="submin-wrap">
+                <button class="submin-btn">Á°ÆËÆ§</button>
+            </div>
+            <div class="imgWrap">
+                    <img src="http://bpic.588ku.com/back_pic/03/69/68/2057b532b233b60.jpg!/fh/300/quality/90/unsharp/true/compress/true" alt="">
+            </div>
+            <div class="payAfterShow payAfterHidden">
+                <p>Â∫î‰ªòÈáëÈ¢ùÔºö<span class="shouldPay"></span>ÂÖÉ</p>
+                <p>ÂÆû‰ªòÈáëÈ¢ùÔºö<span class="factPay"></span>ÂÖÉ</p>
             </div>
         </div>
-        <div class="layer"></div>
-        <div class="layer-content">
-            <div class="form_edit clearfix">
-                <div class="num">1</div>
-                <div class="num">2</div>
-                <div class="num">3</div>
-                <div class="num">4</div>
-                <div class="num">5</div>
-                <div class="num">6</div>
-                <div class="num">7</div>
-                <div class="num">8</div>
-                <div class="num">9</div>
-                <div class="num">.</div>
-                <div class="num">0</div>
-                <div id="remove">
-                    <img src="Content/image/delete_35_24.png" />
-                </div>
+    
+        <div class="keyboard-base keyboard-first-wrap"  style="display:none;">
+            <div class="keybord-group">
+                <span class="keybord-input-span">‰∫¨</span>
+                <span class="keybord-input-span">Ê¥•</span>
+                <span class="keybord-input-span">ÂÜÄ</span>
+                <span class="keybord-input-span">Êôã</span>
+                <span class="keybord-input-span">Ëíô</span>
+                <span class="keybord-input-span">ËæΩ</span>
+                <span class="keybord-input-span">Âêâ</span>
+                <span class="keybord-input-span">Èªë</span>
+                <span class="keybord-input-span">Ê≤™</span>
+                <span class="keybord-input-span">Ëãè</span>
+            </div>
+            <div class="keybord-group">
+                    <span class="keybord-input-span">Êµô</span>
+                    <span class="keybord-input-span">Áöñ</span>
+                    <span class="keybord-input-span">ÈóΩ</span>
+                    <span class="keybord-input-span">Ëµ£</span>
+                    <span class="keybord-input-span">È≤Å</span>
+                    <span class="keybord-input-span">Ë±´</span>
+                    <span class="keybord-input-span">ÈÑÇ</span>
+                    <span class="keybord-input-span">Êπò</span>
+                    <span class="keybord-input-span">Á≤§</span>
+                    <span class="keybord-input-span">Ê°Ç</span>
+                   
+            </div>
+            <div class="keybord-group keybord-group-special1">
+                    <span class="keybord-input-span">Áêº</span>
+                    <span class="keybord-input-span">Ê∏ù</span>
+                    <span class="keybord-input-span">Â∑ù</span>
+                    <span class="keybord-input-span">Ë¥µ</span>
+                    <span class="keybord-input-span">‰∫ë</span>
+                    <span class="keybord-input-span">Ëóè</span>
+                    <span class="keybord-input-span">Èôï</span>
+                    <span class="keybord-input-span">Áîò</span>
+                   
+            </div>
+            <div class="keybord-group keybord-group-special2">
+                    <span class="keybord-input-span">Èùí</span>
+                    <span class="keybord-input-span">ÂÆÅ</span>
+                    <span class="keybord-input-span">Êñ∞</span>
+            </div>
+        </div>
+        <div class="keyboard-base keyboard-second-wrap" style="display:none;">
+                <div class="keybord-group keybord-num">
+                        <span class="keybord-input-span">0</span>
+                        <span class="keybord-input-span">1</span>
+                        <span class="keybord-input-span">2</span>
+                        <span class="keybord-input-span">3</span>
+                        <span class="keybord-input-span">4</span>
+                        <span class="keybord-input-span">5</span>
+                        <span class="keybord-input-span">6</span>
+                        <span class="keybord-input-span">7</span>
+                        <span class="keybord-input-span">8</span>
+                        <span class="keybord-input-span">9</span>
+                    </div>
+            <div class="keybord-group">
+                <span class="keybord-input-span">Q</span>
+                <span class="keybord-input-span">W</span>
+                <span class="keybord-input-span">E</span>
+                <span class="keybord-input-span">R</span>
+                <span class="keybord-input-span">T</span>
+                <span class="keybord-input-span">Y</span>
+                <span class="keybord-input-span">U</span>
+                <span class="keybord-input-span">I</span>
+                <span class="keybord-input-span">O</span>
+                <span class="keybord-input-span">P</span>
+            </div>
+            <div class="keybord-group">
+                    <span class="keybord-input-span">A</span>
+                    <span class="keybord-input-span">S</span>
+                    <span class="keybord-input-span">D</span>
+                    <span class="keybord-input-span">F</span>
+                    <span class="keybord-input-span">G</span>
+                    <span class="keybord-input-span">H</span>
+                    <span class="keybord-input-span">J</span>
+                    <span class="keybord-input-span">K</span>
+                    <span class="keybord-input-span">L</span>
+            </div>
+            <div class="keybord-group ">
+                    <span class="keybord-input-span">Z</span>
+                    <span class="keybord-input-span">X</span>
+                    <span class="keybord-input-span">C</span>
+                    <span class="keybord-input-span">V</span>
+                    <span class="keybord-input-span">B</span>
+                    <span class="keybord-input-span">N</span>
+                    <span class="keybord-input-span">M</span>
+                   
+            </div>
+            <div class="keybord-group ">
+                    <span class="keybord-input-span">Ê∏Ø</span>
+                    <span class="keybord-input-span">Êæ≥</span>
+                    <span class="keybord-input-span">Ë≠¶</span>
+                    <span class="keybord-input-span">È¢Ü</span>
+                    <span class="keybord-input-span">‰Ωø</span>
+                    <span class="keybord-input-span">Â≠¶</span>
+                    <span class="keybord-input-span keybord-delete" >Âà†Èô§</span>
             </div>
         </div>
                 
       <script type="text/javascript" src="Content/js/wx/pay_help.js"></script>
-        <!-- <script>
-            wx.config({
-                debug: '1111',
-                appId: '1111',
-                timestamp: '1111',
-                nonceStr: '1111',
-                signature: '1111',
-                jsApiList: '1111'
-            });
-        </script> -->
         <script type="text/javascript" src="Content/js/pay/PayOrder.js?v=1.0"></script>
+        <script type="text/javascript" src="Content/js/pay/parkPay.js"></script>
     </body>
 </html>
