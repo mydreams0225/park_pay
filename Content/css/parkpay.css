@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*IE/7/6*/
+
+.shuru div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    -webkit-transition: 1s;
+}
+
+.shuru div::-webkit-scrollbar-thumb {
+    background-color: #a7afb4;
+    background-clip: padding-box;
+    min-height: 28px;
+}
+
+.shuru div::-webkit-scrollbar-thumb:hover {
+    background-color: #525252;
+    background-clip: padding-box;
+    min-height: 28px;
+}
+
+.shuru div::-webkit-scrollbar-track-piece {
+    background-color: #ccd0d2;
+}
+
+.wrap {
+    position: relative;
+    margin: auto;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ededed;
+}
+
+.sub_title {
+    position: absolute;
+    padding: 15px;
+    /* padding-left: 22px; */
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.sub_title p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* 输入表单 */
+
+.edit_cash {
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 92px;
+    width: 90%;
+    border: 1.3px solid #FC8A15;
+    border-radius: 10px;
+    background-color: #d4d4d6;
+}
+
+.edit_cash p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.shuru {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.shuru div {
+    border: none;
+    width: 100%;
+    height: 36px;
+    line-height: 30px;
+    /* border-bottom: 1px solid #8a888a; */
+    /* text-indent: 5px; */
+    outline: none;
+    white-space: pre;
+    overflow-x: scroll;
+    padding-top: 8px;
+    font-size: 30px;
+    text-align: center;
+    /* margin-left: -10px; */
+}
+
+.search {
+    display: block;
+    margin: 25px auto 0;
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    background: #FC8A15;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#layer-content {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    z-index: 12;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#remove {
+    background-color: #ffffff;
+    line-height: 45px;
+}
+
+
+/* 键盘(Province) */
+
+.layer-province {
+    bottom: 0px;
+}
+
+.form_edit_province {
+    float: left;
+    width: 100%;
+    background: #DDDDDD;
+    margin: 0 0px 0 3px;
+}
+
+.form_edit_province>div {
+    margin-bottom: 2px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    float: left;
+    width: 12%;
+    height: 48px;
+    text-align: center;
+    color: #000000;
+    line-height: 46px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+}
+
+.form_edit_province>div:nth-child(3n) {
+    margin-right: 0;
+}
+
+.form_edit_province>div>img {
+    margin-bottom: -2px;
+}
+
+
+/* 键盘(Number) */
+
+.layer-platenum {
+    bottom: 0px;
+}
+
+.form_edit_platenum {
+    width: 100%;
+    background: #DDDDDD;
+    margin: 0 1px 0 1px;
+}
+
+.form_edit_platenum>div {
+    margin-bottom: 2px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    float: left;
+    width: 9.7%;
+    height: 45px;
+    text-align: center;
+    color: #000000;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    padding-top: 2px;
+}
+
+.form_edit_platenum>div:nth-child(3n) {
+    margin-right: 0;
+}
+
+.form_edit_platenum>div:last-child {
+    background-color: #DEE1E9;
+}
+
+.form_edit_platenum>div>img {
+    margin-bottom: -2px;
+}
+
+
+/* 层 */
+
+.pay_edit_cash {
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border: 1.3px solid #FC8A15;
+    border-radius: 10px;
+    background-color: #d4d4d6;
+}
+
+.leftDiv {
+    float: left;
+    width: 60%;
+    font-size: 20px;
+}
+
+.rightDiv {
+    float: left;
+    width: 40%;
+    font-size: 20px;
+}
+
+.realDiv {
+    width: 100%;
+    margin-top: 60px;
+    font-size: 26px;
+    border-top: 1px solid #000000;
+    height: 45px;
+    line-height: 58px;
+}
+
+.price {
+    margin-left: 4px;
+    font-size: 22px;
+}
+
+.pay {
+    display: block;
+    margin: 25px auto 0;
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    background: #FC8A15;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+}

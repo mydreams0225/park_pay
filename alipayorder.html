@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="description" content="" />
+    <!--  -->
+    <meta name="keywords" content="" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>停车场支付</title>
+    <!-- <link type="text/css" rel="stylesheet" href="Content/css/pay.css" /> -->
+    <link rel="stylesheet" href="Content/css/parkPays.css">
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <style>
+    </style>
+
+    <script type="text/javascript" src="Content/js/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="Content/js/check_help.js"></script> -->
+    <!--  <script type="text/javascript" src="Content/js/wx/jweixin-1.2.0.min.js"></script> -->
+    <script type="text/javascript" src="Content/js/util_help.min.js"></script>
+</head>
+
+<body>
+        <div class="title-wrap">
+                <div> <span>广州营生广场</span></div>
+               
+            </div>
+            <div class="pay-wrap">
+               <div class="input-wrap">
+                    <span class="input-span  input-span-first"></span>
+                    <span class="input-span"></span>
+                    <span class="input-span-special">●</span>
+                    <span class="input-span"></span>
+                    <span class="input-span"></span>
+                    <span class="input-span"></span>
+                    <span class="input-span"></span>
+                    <span class="input-span"></span>
+                    <span class="input-span last-span" >新能源</span>
+                </div>
+                <div class="submin-wrap">
+                    <button class="submin-btn">确认</button>
+                </div>
+                <div class="imgWrap">
+                        <img src="http://bpic.588ku.com/back_pic/03/69/68/2057b532b233b60.jpg!/fh/300/quality/90/unsharp/true/compress/true" alt="">
+                </div>
+                <div class="payAfterShow payAfterHidden">
+                    <p>应付金额：<span class="shouldPay"></span>元</p>
+                    <p>实付金额：<span class="factPay"></span>元</p>
+                </div>
+            </div>
+        
+            <div class="keyboard-base keyboard-first-wrap"  style="display:none;">
+                <div class="keybord-group">
+                    <span class="keybord-input-span">京</span>
+                    <span class="keybord-input-span">津</span>
+                    <span class="keybord-input-span">冀</span>
+                    <span class="keybord-input-span">晋</span>
+                    <span class="keybord-input-span">蒙</span>
+                    <span class="keybord-input-span">辽</span>
+                    <span class="keybord-input-span">吉</span>
+                    <span class="keybord-input-span">黑</span>
+                    <span class="keybord-input-span">沪</span>
+                    <span class="keybord-input-span">苏</span>
+                </div>
+                <div class="keybord-group">
+                        <span class="keybord-input-span">浙</span>
+                        <span class="keybord-input-span">皖</span>
+                        <span class="keybord-input-span">闽</span>
+                        <span class="keybord-input-span">赣</span>
+                        <span class="keybord-input-span">鲁</span>
+                        <span class="keybord-input-span">豫</span>
+                        <span class="keybord-input-span">鄂</span>
+                        <span class="keybord-input-span">湘</span>
+                        <span class="keybord-input-span">粤</span>
+                        <span class="keybord-input-span">桂</span>
+                       
+                </div>
+                <div class="keybord-group keybord-group-special1">
+                        <span class="keybord-input-span">琼</span>
+                        <span class="keybord-input-span">渝</span>
+                        <span class="keybord-input-span">川</span>
+                        <span class="keybord-input-span">贵</span>
+                        <span class="keybord-input-span">云</span>
+                        <span class="keybord-input-span">藏</span>
+                        <span class="keybord-input-span">陕</span>
+                        <span class="keybord-input-span">甘</span>
+                       
+                </div>
+                <div class="keybord-group keybord-group-special2">
+                        <span class="keybord-input-span">青</span>
+                        <span class="keybord-input-span">宁</span>
+                        <span class="keybord-input-span">新</span>
+                </div>
+            </div>
+            <div class="keyboard-base keyboard-second-wrap" style="display:none;">
+                    <div class="keybord-group keybord-num">
+                            <span class="keybord-input-span">0</span>
+                            <span class="keybord-input-span">1</span>
+                            <span class="keybord-input-span">2</span>
+                            <span class="keybord-input-span">3</span>
+                            <span class="keybord-input-span">4</span>
+                            <span class="keybord-input-span">5</span>
+                            <span class="keybord-input-span">6</span>
+                            <span class="keybord-input-span">7</span>
+                            <span class="keybord-input-span">8</span>
+                            <span class="keybord-input-span">9</span>
+                        </div>
+                <div class="keybord-group">
+                    <span class="keybord-input-span">Q</span>
+                    <span class="keybord-input-span">W</span>
+                    <span class="keybord-input-span">E</span>
+                    <span class="keybord-input-span">R</span>
+                    <span class="keybord-input-span">T</span>
+                    <span class="keybord-input-span">Y</span>
+                    <span class="keybord-input-span">U</span>
+                    <span class="keybord-input-span">I</span>
+                    <span class="keybord-input-span">O</span>
+                    <span class="keybord-input-span">P</span>
+                </div>
+                <div class="keybord-group">
+                        <span class="keybord-input-span">A</span>
+                        <span class="keybord-input-span">S</span>
+                        <span class="keybord-input-span">D</span>
+                        <span class="keybord-input-span">F</span>
+                        <span class="keybord-input-span">G</span>
+                        <span class="keybord-input-span">H</span>
+                        <span class="keybord-input-span">J</span>
+                        <span class="keybord-input-span">K</span>
+                        <span class="keybord-input-span">L</span>
+                </div>
+                <div class="keybord-group ">
+                        <span class="keybord-input-span">Z</span>
+                        <span class="keybord-input-span">X</span>
+                        <span class="keybord-input-span">C</span>
+                        <span class="keybord-input-span">V</span>
+                        <span class="keybord-input-span">B</span>
+                        <span class="keybord-input-span">N</span>
+                        <span class="keybord-input-span">M</span>
+                       
+                </div>
+                <div class="keybord-group ">
+                        <span class="keybord-input-span">港</span>
+                        <span class="keybord-input-span">澳</span>
+                        <span class="keybord-input-span">警</span>
+                        <span class="keybord-input-span">领</span>
+                        <span class="keybord-input-span">使</span>
+                        <span class="keybord-input-span">学</span>
+                        <span class="keybord-input-span keybord-delete" >删除</span>
+                </div>
+            </div>
+    <script src="Content/js/ali/tool.js"></script>
+    <script type="text/javascript" src="Content/js/ali/alipay_help.js"></script>
+    <script type="text/javascript" src="Content/js/ali/aliPayOrder.js?v=1.0"></script>
+    <script type="text/javascript" src="Content/js/ali/aliPayinte.js"></script>
+    <script type="text/javascript" src="Content/js/pay/parkPay.js"></script>
+</body>
+
+</html>

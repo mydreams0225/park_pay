@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="GBK" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <!-- 控制浏览器缓存 -->
+        <!-- <meta http-equiv="Cache-Control" content="no-store" /> -->
+        <!-- 优先使用 IE 最新版本和 Chrome -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- 页面描述 -->
+        <meta name="description" content="不超过150个字符" />
+        <!-- 页面关键词 -->
+        <meta name="keywords" content="" />
+        
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		
+        <title>测试</title>
+        <link type="text/css" rel="stylesheet" href="Content/css/pay.css"/>
+        <style>
+            
+        </style>
+
+        <script type="text/javascript" src="Content/js/jquery-3.2.1.min.js"></script>
+      	<!-- <script type="text/javascript" src="Content/js/check_help.js"></script> -->
+        <script type="text/javascript" src="Content/js/wx/jweixin-1.2.0.min.js"></script>
+        <script type="text/javascript" src="Content/js/util_help.min.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="sub_title">
+                <p>钱习文测试页面-本地页面</p>
+            </div>
+            <form action="" class="edit_cash">
+                <p>消费总额</p>
+                <div class="shuru">
+                    <span>&yen;</span>
+                    <div id="total"></div>
+                </div>
+                <p>可询问工作人员应缴费用总额</p>
+            </form>
+            <input type="submit" value="支付" class="submit" />
+            <br/>
+            <div class="logo">
+                <img src="Content/image/logo_200_85.png" alt="蜂付Logo">
+            </div>
+        </div>
+        <div class="layer"></div>
+        <div class="layer-content">
+            <div class="form_edit clearfix">
+                <div class="num">1</div>
+                <div class="num">2</div>
+                <div class="num">3</div>
+                <div class="num">4</div>
+                <div class="num">5</div>
+                <div class="num">6</div>
+                <div class="num">7</div>
+                <div class="num">8</div>
+                <div class="num">9</div>
+                <div class="num">.</div>
+                <div class="num">0</div>
+                <div id="remove">
+                    <img src="Content/image/delete_35_24.png" />
+                </div>
+            </div>
+        </div>
+                
+      <script type="text/javascript" src="Content/js/wx/pay_help.js"></script>
+        <!-- <script>
+            wx.config({
+                debug: '1111',
+                appId: '1111',
+                timestamp: '1111',
+                nonceStr: '1111',
+                signature: '1111',
+                jsApiList: '1111'
+            });
+        </script> -->
+        <script type="text/javascript" src="Content/js/pay/PayOrder.js?v=1.0"></script>
+    </body>
+</html>

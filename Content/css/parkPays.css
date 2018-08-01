@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #3385ff;
+    /* background-color: rgb(253,149,34); */
+}
+
+.title-wrap{
+    width : 100%;
+}
+
+.title-wrap div{
+    cursor: pointer;
+    /* text-decoration: underline; */
+    margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+font-size: 16px;
+color:#fff;
+height : 16px;
+line-height: 16px;
+text-align: center;
+
+}
+.pay-wrap{
+   
+    height : 92%;
+    width : 97%;
+    background-color: #fff;
+    border : 1px solid #ddd;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 3px;
+    
+}
+
+.pay-wrap .input-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    width : 90%;
+    margin-top : 20px;
+    margin-left : auto;
+    margin-right : auto;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #ddd;
+
+}
+
+.pay-wrap .input-wrap .input-span{
+    text-align: center;
+    line-height: 36px;
+    width: 36px;
+    height: 36px;
+    border :1px solid #ddd;
+    display: inline-block;
+    margin-left: 9px;
+}
+.pay-wrap .input-wrap .last-span{
+    border:1px dashed #ccc;
+    width: 36px;
+    font-size:3.75px;
+}
+
+.pay-wrap .input-wrap .input-span-active{
+   
+    border :1px solid #3385ff;
+    /* border :1px solid rgb(253,149,34); */
+   
+}
+
+
+.pay-wrap .input-wrap .input-span-special{
+    height: 43px;
+
+    line-height: 40px;
+    margin-left : 9px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align:text-bottom;
+    display: inline-block;
+
+}
+
+.pay-wrap  .submin-wrap{
+    width: 100%;
+    margin-top : 10px;
+}
+
+.pay-wrap  .submin-wrap button {
+    display: block;
+    height :36px;
+    width : 90%;
+    margin-left : auto;
+    margin-right: auto;
+    background-color: #3385ff;
+    /* background-color: rgb(253,149,34); */
+    color : #fff;
+    font-size : 20px;
+    border-radius: 3px;
+    border :1px solid #3385ff;
+    /* border :1px solid rgb(253,149,34); */
+}
+
+.pay-wrap  .submin-wrap .submin-btn {
+    -webkit-appearance: none;
+}
+
+.keyboard-base{
+    background: #ddd;
+    width : 100%;
+    position : absolute;
+    bottom: 0;
+
+}
+
+.keyboard-first-wrap{
+    height:200px;
+
+}
+
+.keyboard-second-wrap{
+    height:250px;
+
+}
+
+
+
+.keybord-group{
+    width : 100%;
+    display: block;
+    height : 36px;
+    margin-top:10px;
+    margin-left : auto;
+    margin-right:auto;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.keybord-num{
+    background-color: rgb(99, 98, 101);
+    margin-top: 0px;
+    padding-top: 10px;
+    height : 56px;
+}
+
+.keyboard-first-wrap .keybord-group-special1{
+    width : 76.5%;
+
+}
+
+.keyboard-first-wrap .keybord-group-special2{
+    width : 34.5%;
+
+}
+
+
+.keybord-group .keybord-input-span{
+    border : 1px soild #fff;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 36px;
+    width : 25px;
+    display: inline-block;
+    margin:0 5px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.keybord-group  .keybord-delete{
+    width : 50px !important;
+    background-color: rgb(99, 98, 101);
+}
+.imgWrap{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.imgWrap img{
+    width: 100%;
+    height:100%;
+}
+.payAfterHidden{
+    display: none;
+}
+.payAfterShow{
+    text-align: center;
+    margin-top:50px;
+    font-size: 28px;
+    font-weight: bold;
+    color:red;
+
+    /* margin: 15px; */
+}
+
